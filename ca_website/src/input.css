@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer utilities {
+  .cardinfo {
+    @apply m-3 mb-5 rounded-lg border bg-gray-100 p-6 text-center transition hover:-translate-y-2 max-md:w-[45%] md:w-[30%];
+  }
+  .navbar_btn {
+    @apply cursor-pointer hover:text-black text-white;
+  }
+  .text_input {
+    @apply mb-2 w-[90%] rounded-lg border border-gray-300 px-4 py-2 mt-3 bg-pink-400;
+  }
+  .clear_btn {
+    @apply absolute right-10 lg:right-10 sm:right-8  top-5 bg-pink-200 rounded-full text-sm w-6 h-6 cursor-pointer hover:bg-white;
+  }
+}

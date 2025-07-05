@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7945227e73.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tailwind Project</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- NavBar -->
+    <header
+      class="fixed z-20 flex w-full items-center justify-between bg-red-400 opacity-90 text-white"
+    >
+      <div class="mx-0 flex items-center gap-1 p-2">
+        <img class="w-13 my-1 h-12" src="./photos/ca_logo.png" alt="" />
+        <span>PAREKH&PAREKH</span>
+      </div>
+      <div
+        class="lg:text-base flex text-xs font-semibold max-md:hidden md:gap-3 lg:gap-5"
+      >
+        <button data-target="cover-1" class="navbar_btn">HOME</button>
+        <button data-target="aboutus" class="navbar_btn"> ABOUT US</button>
+        <button data-target="services" class="navbar_btn">SERVICES</button>
+        <button data-target="industries" class="navbar_btn">INDUSTRIES</button>
+        <button data-target="contact_info" class="navbar_btn">CONTACT US</button>
+      </div>
+      <div
+        class="m-2 rounded-lg border-2 border-solid group hover:bg-green-500 backdrop-invert-50 p-3 max-md:hidden"
+      >
+      <a href="https://wa.me/919324127878" class="group-hover:text-black"  target="_blank"><i class="fa-brands fa-whatsapp text-lg mr-1.5"></i>+91 93241 27878</a>
+    </div>
+            <!-- drop down menu -->
+      <div class="md:hidden relative group">
+        <button  id="menuButton" class="navbar_btn p-2">
+          <i class="fa fa-bars"></i>
+        </button>
+        
+        <div id="dropdownMenu" class="z-20 absolute bg-red-400 border border-gray-300 shadow-lg w-32 group-hover:block hidden right-0 opacity-70 ">
+          <button data-target="cover-1" class="block navbar_btn">HOME</button>
+         <button data-target="aboutus" class="block navbar_btn"> ABOUT US</button>
+         <button data-target="services" class="block navbar_btn">SERVICES</button>
+         <button data-target="industries" class="block navbar_btn">INDUSTRIES</button>
+         <button data-target="contact_info" class="block navbar_btn">CONTACT US</button>
+        </div>
+      
+       </div> 
+      
+    </header>
+    <!-- COVER-1 -->
+    <div id="cover-1" class="relative z-10 w-full">
+      <img
+        class="w-full"
+        src="https://static.vecteezy.com/system/resources/thumbnails/002/256/477/small/stock-and-graph-design-background-business-graph-banner-design-eps10-illustration-free-vector.jpg"
+      />
+      <divx
+        class="absolute inset-0 flex items-center justify-between p-4 font-serif"
+      >
+        <p class="text-4xl font-extrabold">
+          WELCOME TO PAREKH&PAREKH<br />
+          <span class="text-center text-xl font-medium"
+            >Guiding Your Finances with Precision and Care.</span
+          >
+        </p>
+        <div class="max-md:hidden">
+          <i class="fa fa-calculator" style="font-size: 400px"></i>
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <section class="" id="aboutus">
+      <div
+        class="flex w-full justify-center font-serif text-[50px] font-bold underline decoration-red-600 decoration-double decoration-2"
+      >
+        <p
+          class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent"
+        >
+          ABOUT US
+        </p>
+      </div>
+      <div class="mb-10 flex justify-between">
+        <div class="max-md:text-center md:w-3/4">
+          <div class="mt-5 flex p-4 font-serif text-[35px] font-semibold">
+            WHAT ARE WE?
+          </div>
+          <div class="md:ml-4 ml-1 mt-1">
+            With 13 years of rich experience as Chartered Accountants, we're
+            passionate about empowering businesses in Mumbai and beyond to
+            achieve their financial goals. Our expertise spans a wide range of
+            services, including GST return filing, GST refund filing, company
+            and LLP incorporation, global accounting, and much more. We take
+            pride in having helped numerous clients streamline their finances,
+            reduce tax burdens, and successfully expand their businesses
+            internationally.
+            <br /><br />When we're not crunching numbers, you might find us
+            analyzing the latest financial trends, networking with industry
+            leaders, or enjoying a well-deserved cup of Mumbai's famous cutting
+            chai
+          </div>
+        </div>
+        <div class="p-4 max-md:hidden">
+          <img
+            class="h-[500px]"
+            src="https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg"
+          />
+        </div>
+      </div>
+      <div class="mb-10 grid grid-cols-2 items-center gap-4">
+        <div class="w-full max-md:hidden">
+          <img
+            class="h-[500px]"
+            src="https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg"
+          />
+        </div>
+        <div class="w-[100%] text-center max-md:w-screen">
+          <div
+            class="mt-4 flex p-4 text-center font-serif text-[35px] font-semibold"
+          >
+            <h1>
+              Why
+              <span
+                class="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent"
+                >Choose Us:</span
+              >
+            </h1>
+          </div>
+          <div class="md:ml-4 mt-1">
+            With 13 years of rich experience as Chartered Accountants, we're
+            passionate about empowering businesses in Mumbai and beyond to
+            achieve their financial goals. We understand that navigating the
+            financial landscape can be complex and time-consuming. That's why we
+            offer a comprehensive range of services tailored to your unique
+            needs:
+            <br /><span class="underline">1. GST Mastery:</span> From compliance
+            and advisory to refunds and assessments, we ensure your GST
+            processes are seamless and optimized. Seamless Company
+            Incorporation: We handle the legal complexities, so you can focus on
+            building your business. Global Accounting <br /><span
+              class="underline"
+              >Expertise:</span
+            >
+            Expanding internationally? We provide expert guidance to navigate
+            complex cross-border financial regulations. <br /><span
+              class="underline"
+              >Direct Tax (Income Tax):</span
+            >
+            We help you plan effectively and minimize your tax liability.
+            Financial Reporting: We ensure your financial statements are
+            accurate, and compliant, and provide valuable insights. Our track
+            record speaks for itself: we've helped numerous clients streamline
+            their finances, reduce tax burdens, and successfully expand their
+            businesses.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+    <section id="services">
+      <div
+        class="mt-4 flex w-full justify-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text font-serif text-[50px] font-bold text-transparent underline decoration-red-600 decoration-double decoration-2"
+      >
+        OUR SERVICES
+      </div>
+      <div class="mb-5 flex flex-wrap justify-between">
+        <div class="cardinfo">
+          <div class="flex justify-center">
+            <img src="photos/ca_logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">Service 1</h1>
+            <h4>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reiciendis quaerat impedit molestiae quia inventore quasi rerum
+              iure? Eius, aliquam unde eveniet, iusto eligendi iste voluptatibus
+              cumque aperiam, facere hic inventore!
+            </h4>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <div class="flex justify-center">
+            <img src="photos/ca_logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">Service 2</h1>
+            <h4>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor,
+              ad voluptate optio, quisquam accusantium rerum repudiandae beatae,
+              cumque debitis fuga eaque! Dolore ipsam, quis quaerat veritatis
+              eveniet ipsum enim nemo?
+            </h4>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <div class="flex justify-center">
+            <img src="photos/ca_logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">Service 3</h1>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              expedita nisi magni consequatur aut vel eos nostrum non cum
+              delectus, amet fuga architecto! Similique dignissimos rem nesciunt
+              ullam, sapiente maxime!
+            </h4>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <div class="flex justify-center">
+            <img src="photos/ca_logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">Service 4</h1>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              facere quaerat necessitatibus iusto eius? Atque nemo nisi eaque
+              voluptatibus facere fugit ipsum officiis placeat eum
+              necessitatibus, impedit itaque deserunt eveniet.
+            </h4>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <div class="flex justify-center">
+            <img src="photos/ca_logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">Service 5</h1>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+              culpa id reprehenderit nisi ipsa necessitatibus ex, ducimus
+              veritatis incidunt eaque expedita provident molestiae quibusdam
+              cumque consequatur, inventore ratione! Fuga, nobis?
+            </h4>
+          </div>
+        </div>
+        <div class="cardinfo">
+          <div class="flex justify-center">
+            <img src="photos/ca_logo.png" alt="" />
+          </div>
+          <div>
+            <h1 class="text-lg font-bold">Service 6</h1>
+            <h4>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+              accusamus quos excepturi officia tempora ea impedit ex cupiditate!
+              Ratione quod officia autem repellendus dolores et id sint
+              distinctio quam dolor.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--INDUSTRIES-->
+    <section id="industries"></section>
+    <!-- CONTACT US -->
+     <section id="contact_info" class="grid grid-cols-12 md:text-lg max-sm:grid-cols-1 max-sm:text-center gap-4 bg-red-400 h-auto ">
+      <!-- OUR DEETS -->
+      <div class="p-4 ml-10 col-span-6 ">
+        <h1 class="text-4xl mb-4">Contact Us</h1>
+        <h1 class="mb-4">We are always here to hear you out</h1>
+        <div class="mb-4">
+          <i class="fa-solid fa-location-dot"></i>
+          <h1>No.U-15, J.V.P.D. Scheme <br>
+            Bhaktivednata Swami Rd, Opp.Cooper Hospital <br>
+            Vile Parle, Mumbai, <br>
+            Maharashtra 400056</h1>
+        </div>
+        <div class="mb-4">
+          <i class="fa-solid fa-envelope"></i>
+          <h1>parekh&parekh@gmail.com</h1>
+        </div>
+        <div class="mb-4">
+          <i class="fa-solid fa-phone"></i>
+          <h1>+91 93241 27878 <br>+91 93214 07229 </h1>
+        </div>
+      </div>
+      <!-- YOUR DEETS -->
+      <div class="w-[90%] w col-span-6 rounded-lg mt-5 place-self-center  bg-pink-200 ">
+        <div class="flex-wrap text-center ">
+          <div class="relative mt-3" >
+            <input
+            type="text"
+            placeholder="Enter Name"
+            class="text_input"
+            id="nametext"
+          />
+          <button class="clear_btn hidden" id="nameclear">&times</button>
+          </div>
+          <div class="relative">
+            <input
+            type="text"
+            placeholder="Email"
+            class="text_input"
+            id="emailtext"
+          />
+          <button class="clear_btn hidden" id="emailclear">&times</button>
+          </div>
+        <div class="relative">
+          <input
+          type="text"
+          placeholder="Phone Number"
+          class="text_input"
+          id="phonetext"
+        />
+        <button class="clear_btn hidden" id="phoneclear">&times</button>  
+        </div>
+        <div class="relative">
+          <input
+            type="text"
+            placeholder="Message"
+            class="text_input h-24"
+            id="messagetext"
+          />
+          <button class="clear_btn hidden mt-7" id="messageclear">&times</button>
+        </div>
+
+          <button class="mt-3 mb-6 text-center rounded-lg bg-black hover:bg-black/90 py-4 text-white w-[90%] cursor-pointer">  Submit Now </button>
+        </div>
+
+ 
+    </div>
+
+    </section>
+    <!-- back to top btn -->
+     <a href="#" class="fixed right-4 bottom-2 bg-red-200 p-2 rounded-full pl-3 pr-3 transition hover:bg-red-300 group"> <i class="transition group-hover:-translate-y-1 fa-solid fa-arrow-up"></i></i></a>
+    <!-- script -->
+     <script src="script.js" defer ></script>  
+    </body>
+</html>
